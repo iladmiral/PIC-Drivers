@@ -1,5 +1,5 @@
 # PIC-Drivers
-Drivers (**I2C**, **SPI**, **UART**) for *PIC16F877A* and Other Similar PIC MCU | [MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide)
+Drivers (**I2C**, **SPI**, **UART**) for *PIC16F877A* and Other Similar PIC MCUs | [MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide)
 
 This is a basic PIC drivers ready to use for series bus connections, tested in simulation ([Proteus](https://www.labcenter.com/downloads/) | Simulations [I2C](https://github.com/iladmiral/Simulation-Circuit/tree/master/I2C), [SPI](https://github.com/iladmiral/Simulation-Circuit/tree/master/SPI), [UART](https://github.com/iladmiral/Simulation-Circuit/tree/master/UART)) & in real prototyping (Pkit3). 
 In order to make simple each folder contains two directory Master & Salve which contains two files (main.c, Config.h)
