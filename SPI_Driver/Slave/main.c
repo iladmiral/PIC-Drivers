@@ -10,7 +10,7 @@
 #include <xc.h>
 #include <stdint.h>
 #include"Config.h"
-#define _XTAL_FREQ 4000000
+#define _XTAL_FREQ 4000000 // Fose
 
 void SPI_Slave_init ();
 uint8_t SPI_Read();
@@ -36,9 +36,9 @@ SSPEN = 1;
 //Config CLK polarity & phase
 CKP = 0;
 CKE = 0;
- //Config the input data sampled
+//Config the input data sampled
 SMP = 0;
- //Config I/O Pins
+//Config I/O Pins
 TRISC5 = 0; //SDO
 TRISC4 = 1; //SDI
 TRISC3 = 1; //SCK
@@ -47,7 +47,7 @@ PCFG2 = 1;
 PCFG1 = 0;
 PCFG0 = 0;
 TRISA5 = 1; // SS -> Input
-    //Enable Interrupts
+//Enable Interrupts
 SSPIE = 1;
 PEIE = 1;
 GIE = 1;
