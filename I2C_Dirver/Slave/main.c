@@ -18,7 +18,7 @@ void I2C_Slave_Init(unsigned char Address);
 void main(void) {
     TRISD = 0x00;
     PORTD = 0x00;
-    I2C_Slave_Init(0x40); // Initiate I2C Slave With Address = 64 or 0x40
+    I2C_Slave_Init(0x40); // Initiate I2C slave with addresse = 64 or 0x40
     while (1){
     
     }
@@ -33,7 +33,7 @@ void I2C_Slave_Init(unsigned char Address){
   SSPSTAT = 0x80; // Disable Slew Rate Control (Standard Mode)
   SSPCON = 0x36; // Select & Enable I2C (Slave Mode)
   SSPCON2 = 0x01; // Enable Clock Stretching
-  SSPIF = 0;      // Enbable Interrupts
+  SSPIF = 0;      // Enable Interrupts
   SSPIE = 1;
   PEIE = 1;
   GIE = 1;
