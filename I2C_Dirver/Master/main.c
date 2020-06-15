@@ -37,17 +37,17 @@ void main(void) {
     I2C_Write(i++);
     I2C_Stop();
     __delay_ms(500);
-    RD3 = ~RD3; // Toggle a LED each time a bayte is send
+    RD3 = ~RD3; // Toggle a LED each time a byte is send
     }
     return;
 }
 
-//Verify the previous state has reached completion successfully 
+// Verify the previous state has reached completion successfully 
 void I2C_Wait(void){
     while((SSPSTAT & 0x04) || (SSPCON2 & 0x1F));
 }
 
-// Satup I2C for Master Mode
+// Setup I2C for Master Mode
 void I2C_Master_Init(void){
     SSPCON = 0x28;
     SSPCON2 = 0x00;
