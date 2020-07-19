@@ -48,3 +48,4 @@ ___
 # TODO:
 1. Test building only with makefile.
 2. Make a pattren to support diffrent situations.
+3. Add full explanation of circuits and applications.
